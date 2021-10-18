@@ -1,0 +1,7 @@
+More details about individual files can be found in the readme file in the zip file.
+
+MAIN FILES THAT SHOULD BE RUN FOR REVERSE ENGINEERING RESULTS
+revengmodel1.m, revengmodel2.m, revengmodel3.m
+Things to change in code: iteration number (for iter 1:100) Update max number
+Change mat files to be loaded: load model2NN2.mat
+All mat files available in folder "mat files"
