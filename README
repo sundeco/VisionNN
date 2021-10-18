@@ -5,3 +5,6 @@ revengmodel1.m, revengmodel2.m, revengmodel3.m
 Things to change in code: iteration number (for iter 1:100) Update max number
 Change mat files to be loaded: load model2NN2.mat
 All mat files available in folder "mat files"
+Upon running the code, four numbers will be printed out each loop iteration. These four numbers correspond to the parameter estimations with each loop iteration 
+corresponding to one data point used to reverse engineer the parameters. 
+All results are stored in the array total. Plot a histogram of the four columns of total to observe distribution of estimates.
