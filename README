@@ -1,4 +1,5 @@
 More details about individual files can be found in the readme file in the zip file.
+Required: Gurobi and Yalmip optimizers
 
 MAIN FILES THAT SHOULD BE RUN FOR REVERSE ENGINEERING RESULTS
 revengmodel1.m, revengmodel2.m, revengmodel3.m
@@ -21,3 +22,6 @@ that some of the images are missing and moved into a folder called green_images 
 using more vibrant colors. None of the code directly references either of these images. 
 Mat file model2NNreal.mat consists of the same mat file format as before, but uses real data instead. The code runs with this mat file but does not produce very 
 accurate or consistent results.
+
+The structures of the neural networks used in the mat files are a combination of linear layers and leaky ReLU layers. See the readme file in the zip for more 
+information on which .m files can be edited to change this.
