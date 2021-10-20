@@ -2,8 +2,12 @@ More details about individual files can be found in the readme file in the zip f
 
 MAIN FILES THAT SHOULD BE RUN FOR REVERSE ENGINEERING RESULTS
 revengmodel1.m, revengmodel2.m, revengmodel3.m
-Things to change in code: iteration number (for iter 1:100) Update max number
+Things to change in code: iteration number (for iter 1:100) 
+Update max number from 100 to whatever number
 Change mat files to be loaded: load model2NN2.mat
+
+NOT ALL THE MAT FILES ACTUALLY HAVE A NEURAL NETWORK TRAINED ON THE DATA. IN THESE CASES, INSTEAD OF QUERYING THE NETWORK, THE CODE DIRECTLY TAKES FROM THE OUTPUT
+MATRIX CENTERMAT. COMMENT OUT THE CORRESPONDING CODE LINES (LINE 14 OR 15) TO RUN IT.
 All mat files available in folder "mat files"
 These mat files use vertex detection from computer generated images of prisms.
 Upon running the code, four numbers will be printed out each loop iteration. These four numbers correspond to the parameter estimations with each loop iteration 
@@ -15,3 +19,5 @@ data. This is in model1NN2.mat and model2NN3.mat.
 Currently some progress is being done on implementing the reverse engineering for real images. These images can be found in a folder called "real iamges." Note 
 that some of the images are missing and moved into a folder called green_images in order to color the vertices green to experiment with automatic corner detection
 using more vibrant colors. None of the code directly references either of these images. 
+Mat file model2NNreal.mat consists of the same mat file format as before, but uses real data instead. The code runs with this mat file but does not produce very 
+accurate or consistent results.
