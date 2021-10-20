@@ -5,6 +5,13 @@ revengmodel1.m, revengmodel2.m, revengmodel3.m
 Things to change in code: iteration number (for iter 1:100) Update max number
 Change mat files to be loaded: load model2NN2.mat
 All mat files available in folder "mat files"
+These mat files use vertex detection from computer generated images of prisms.
 Upon running the code, four numbers will be printed out each loop iteration. These four numbers correspond to the parameter estimations with each loop iteration 
 corresponding to one data point used to reverse engineer the parameters. 
 All results are stored in the array total. Plot a histogram of the four columns of total to observe distribution of estimates.
+
+There are also corresponding mat files for when only 6 of the 8 vertices of the prism available, corresponding to a more realistic setting when gathering actual 
+data. This is in model1NN2.mat and model2NN3.mat. 
+Currently some progress is being done on implementing the reverse engineering for real images. These images can be found in a folder called "real iamges." Note 
+that some of the images are missing and moved into a folder called green_images in order to color the vertices green to experiment with automatic corner detection
+using more vibrant colors. None of the code directly references either of these images. 
